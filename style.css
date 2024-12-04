@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mole {
+    width: 80%;
+    height: 80%;
+    background-color: #4caf50;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    cursor: pointer;
+    display: none;
+}
+
+.mole.active {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #0095DD;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
